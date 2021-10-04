@@ -70,9 +70,9 @@ function func() {
     var shellSel = document.getElementById("shellSel");
     var expressionPic = document.getElementById("expression");
     var expressionSel = document.getElementById("expressionSel");
-    actionPic.src = "./action/" + actionSel.value + ".png";
-    shellPic.src = "./shell/" + shellSel.value + ".png";
-    expressionPic.src = "./expression/" + expressionSel.value + ".png";
+    actionPic.src = "./Action/" + actionSel.value + ".png";
+    shellPic.src = "./Shell/" + shellSel.value + ".png";
+    expressionPic.src = "./Expression/" + expressionSel.value + ".png";
     if (actionSel.value < 4) {
         additionPic.src = "./Addition/" + actionSel.value + ".png";
     } else {
