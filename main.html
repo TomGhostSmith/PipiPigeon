@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <meta name="layout" content="main">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="http://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/2.1.0/jquery.js"></script>
+</head>
+
+<body>
+    <!-- <img src="B.png" alt="" id="B"> -->
+    <!-- <div class="box" style="height: 30px;width: 30px;background-color: #ccc;"></div> -->
+    <div id="control" style="height: 100px;width: 2048px;background-color: #ddd;">
+        <select id="actionSel" style="width: 100px;left: 100px;top: 40px;position: absolute;" onclick="func()">
+            <option value="1">比心</option>
+            <option value="2">拍照</option>
+            <option value="3">看书</option>
+            <option value="4">挠头</option>
+            <option value="5">收到</option>
+        </select>
+        <select id="shellSel" style="width: 100px;left: 250px;top: 40px;position: absolute;" onclick="func()">
+            <option value="1">正装</option>
+            <option value="2">喜庆</option>
+            <option value="3">博学</option>
+            <option value="4">朴素</option>
+        </select>
+        <select id="expressionSel" style="width: 100px;left: 400px;top: 40px;position: absolute;" onclick="func()">
+            <option value="1">坚定</option>
+            <option value="2">好累</option>
+            <option value="3">酷</option>
+            <option value="4">无语</option>
+            <option value="5">哭</option>
+            <option value="6">好耶</option>
+        </select>
+        <br>
+        <input type="button" value="保存图片" id="saveData" style="left: 550px;top: 40px;position: absolute;">
+        <!-- <button onclick="html('png',true)" style="height: 50px;width: 100px;"></button> -->
+    </div>
+    <div id="canvas">
+        <img src="./Addition/1.png" alt="" id="addition" style="position: absolute;z-index: 4;">
+        <img src="./Expression/1.png" alt="" id="expression" style="position: absolute;z-index: 3;">
+        <img src="./Shell/1.png" alt="" id="shell" style="position: absolute;z-index: 2;">
+        <img src="./Action/1.png" alt="" id="action" style="position: absolute;z-index: 1;">
+    </div>
+</body>
+<!-- <script src="html2canvas.js"></script> -->
+<!-- <script src="canvas2png.js"></script> -->
+<script src="main.js"></script>
+
+</html>
